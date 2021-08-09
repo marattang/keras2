@@ -92,3 +92,6 @@ print('acc : ', loss[1])
 
 # CNN
 # acc :  0.4796999990940094
+
+# learning rate reduce 사용 후 
+# acc :  0.4846999943256378

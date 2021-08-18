@@ -36,7 +36,7 @@ x_test = x_test.reshape(10000, 28, 28, 1).astype('float32')/255
 
 # 2. 모델
 # '''
-def build_model(drop=0.5, optimizer=Adam, learning_rate=0.01, activation='relu', node=[32, 64, 128, 256]):
+def build_model(drop=0.5, optimizer=Adam, learning_rate=0.01, activation='relu', node=128):
     inputs = Input(shape=(28, 28, 1), name='input')
     x = Conv2D(node, kernel_size=(2,2), activation=activation)(inputs)
     x = MaxPooling2D()(x)
@@ -52,19 +52,6 @@ def build_model(drop=0.5, optimizer=Adam, learning_rate=0.01, activation='relu',
     model.compile(optimizer=optimizer, metrics=['acc'], loss='categorical_crossentropy')
     return model
 
-def ran_int(node):
-    print('node :', node)
-    print('node :', type(node))
-    intvalue = rd.choice(node)
-    print('type:', intvalue)
-    return rd.choice(node)
-'''
-def cnn_layer(node=[128, 32], kernel_size) :
-
-    for i in node:
-        Conv2D(node, kernel_size=kernel_size, activation='relu')
-    return Conv2D    
-'''
 def create_hyperparameter():
     batches = [1000, 2000, 3000, 4000, 5000]
     optimizers = [RMSprop, Adam, Adadelta]
@@ -77,17 +64,17 @@ def create_hyperparameter():
             'activation': activation, 'node':node}
 
 hyperparameter = create_hyperparameter()
-# print(hyperparameter)
+print(hyperparameter)
 # model = build_model()
 
 model = KerasClassifier(build_fn=build_model, verbose=1, validation_split=0.2)
 
 model = RandomizedSearchCV(model, hyperparameter, cv=5)
+es = EarlyStopping(monitor='val_loss', mode='auto', patience=5)
+model.fit(x_train, y_train, verbose=1, epochs=150, validation_split=0.2, callbacks=[es])
 # mode2 = GridSearchCV(model, hyperparameter, cv=2)
 
-# model.fit(x_train, y_train, verbose=1, epochs=3, validation_split=0.2)
-es = EarlyStopping(monitor='val_loss', patience=10, mode='auto')
-model.fit(x_train, y_train, verbose=1, epochs=123, callbacks=[es])
+
 # 어기적~ 어기적~
 print(model.best_params_)
 print(model.best_estimator_)

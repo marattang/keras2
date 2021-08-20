@@ -33,9 +33,6 @@ print(x)
 y = f(x)
 
 # print('keys', lr25['x1_value'])
-lr50 = learning_rate(0.5)
-lr75 = learning_rate(0.75)
-lr100 = learning_rate(1.0)
 lr = [0.25, 0.5, 0.75, 1.0]
 for i, j in enumerate(lr):
     lrl = learning_rate(j)

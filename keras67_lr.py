@@ -1,4 +1,5 @@
-weight = 1.0
+import matplotlib.pyplot as plt
+weight = 0.5
 input = 0.8
 goal_prediction = 0.8   #이놈 빼고 다 튜닝된다.
 lr = 100                #0.001 0.1 / 1 / 0.0001 / 100
@@ -20,3 +21,4 @@ for iteration in range(epochs): # range => epochs
         weight = weight - lr
     if(down_error > up_error):
         weight = weight + lr
+    

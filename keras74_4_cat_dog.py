@@ -67,6 +67,7 @@ print('loss : ', result[0])
 print('acc : ', result[1])
 
 # '''
+# basic CNN
 # activation = sigmoid
 # loss :  0.8603302836418152
 # acc :  0.686109721660614
@@ -79,5 +80,6 @@ print('acc : ', result[1])
 # loss :  0.6418152451515198
 # acc :  0.6747404932975769
 
+# InceptionResNetV2
 # loss :  1.5847339630126953
 # acc :  0.9130005240440369

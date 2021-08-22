@@ -126,21 +126,21 @@ model_train(x_data['x_train'], x_data['x_test'], y_train, y_test)
 '''
 cifar 10
 FC/trainable : False
-loss :  1.8211373090744019  - accuracy :  0.37610000371932983
+loss :  1.2393006086349487 accuracy :  0.5717999935150146
 GAP/trainable : False
-loss :  2.169480085372925  - accuracy :  0.17870000004768372
+loss :  1.2407950162887573 accuracy :  0.5705000162124634
 FC/trainable : True
-loss :  0.5058783888816833  - accuracy :  0.8981999754905701
+loss :  0.6601503491401672 accuracy :  0.8762000203132629
 GAP/trainable : True
-loss :  0.55596524477005  - accuracy :  0.8980000019073486
+loss :  0.7333699464797974 accuracy :  0.8772000074386597
 
 cifar100
 FC/trainable : False
-loss :  4.605153560638428  - accuracy :  0.009999999776482582
+loss :  2.9139232635498047 accuracy :  0.28600001335144043
 GAP/trainable : False
-loss :  4.602907657623291  - accuracy :  0.010599999688565731
+loss :  2.9828567504882812 accuracy :  0.2597000002861023
 FC/trainable : True
-loss :  1.9836857318878174  - accuracy :  0.6460000276565552
+loss :  2.069634199142456 accuracy :  0.5989000201225281
 GAP/trainable : True
-loss :  2.313573122024536  - accuracy :  0.6622999906539917
+loss :  2.1894586086273193 accuracy :  0.635699987411499
 '''

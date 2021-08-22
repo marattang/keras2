@@ -105,23 +105,22 @@ model_train(cifar100)
 
 '''
 cifar 10
-FC/trainable: False
-loss :  1.2731280326843262 - accuracy :  0.5938000082969666
-GAP/trainable: False
-loss :  1.3001595735549927 - accuracy :  0.5859000086784363
+FC/trainable : False
+loss :  1.2393006086349487 accuracy :  0.5717999935150146
+GAP/trainable : False
+loss :  1.2407950162887573 accuracy :  0.5705000162124634
 FC/trainable : True
-loss :  24.11263656616211 - accuracy :  0.3149999976158142
+loss :  0.6601503491401672 accuracy :  0.8762000203132629
 GAP/trainable : True
-loss :  1.0186824798583984 - accuracy :  0.7997999787330627
+loss :  0.7333699464797974 accuracy :  0.8772000074386597
 
 cifar100
 FC/trainable : False
-loss :  3.0589981079101562 - accuracy :  0.2858000099658966
+loss :  2.9139232635498047 accuracy :  0.28600001335144043
 GAP/trainable : False
-loss :  3.043149709701538 - accuracy :  0.2757999897003174
-Model: "den"
-FC/trainableTrue
-loss :  15.306422233581543 - accuracy :  0.017799999564886093
-GAP/trainableTrue
-loss :  3.2365543842315674 - accuracy :  0.4205000102519989
+loss :  2.9828567504882812 accuracy :  0.2597000002861023
+FC/trainable : True
+loss :  2.069634199142456 accuracy :  0.5989000201225281
+GAP/trainable : True
+loss :  2.1894586086273193 accuracy :  0.635699987411499
 '''

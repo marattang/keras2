@@ -136,8 +136,8 @@ loss :  3.0589981079101562 - accuracy :  0.2858000099658966
 GAP/trainable : False
 loss :  3.043149709701538 - accuracy :  0.2757999897003174
 Model: "vgg19"
-FC/trainableTrue
+FC/trainable : True
 loss :  15.306422233581543 - accuracy :  0.017799999564886093
-GAP/trainableTrue
+GAP/trainable : True
 loss :  3.2365543842315674 - accuracy :  0.4205000102519989
 '''

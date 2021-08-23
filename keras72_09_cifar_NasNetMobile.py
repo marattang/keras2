@@ -76,8 +76,8 @@ def model_train(x_train, x_test, y_train, y_test):
 
         tf.debugging.set_log_device_placement(True)
         # with tf.device('/GPU:1'):
-        model1.fit(x_train, y_train, epochs=500, batch_size=256, validation_split=0.05, callbacks=[es, reduce_lr])
-        model2.fit(x_train, y_train, epochs=500, batch_size=256, validation_split=0.05, callbacks=[es, reduce_lr])
+        model1.fit(x_train, y_train, epochs=40, batch_size=128, validation_split=0.05, callbacks=[es, reduce_lr])
+        model2.fit(x_train, y_train, epochs=40, batch_size=128, validation_split=0.05, callbacks=[es, reduce_lr])
         end = time.time() - start
 
         print("걸린시간 : ", end)

@@ -113,7 +113,7 @@ FC/trainable : True
 loss :  0.7373404502868652 accuracy :  0.8233000040054321
 GAP/trainable : True
 loss :  0.9726871252059937 accuracy :  0.823199987411499
-
+ 
 cifar100
 FC/trainable : False
 loss :  2.7700016498565674 accuracy :  0.3483999967575073

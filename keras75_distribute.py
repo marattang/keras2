@@ -63,7 +63,7 @@ strategy = tf.distribute.experimental.MultiWorkerMirroredStrategy( # 209
     # tf.distribute.experimental.CollectiveCommunication.NCCL   # 204
     # tf.distribute.experimental.CollectiveCommunication.AUTO   # 205
 # 위 세 개 중에 아무거나 써도 되는데, reload strategy 이후로 그렇게 성능차이 안남. 
-) #
+) #  
 
 # tnesorflow org 들어가면 분산형 학습이라고 있음. 심심할 때 보기
 # 현재 버전에서 실행이 안되는 부분이 몇 개 있음.  device를 먹혀주던가 cross device option을 설정해줘야지 제대로 먹힌다.

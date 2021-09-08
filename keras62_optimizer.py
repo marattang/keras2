@@ -1,6 +1,6 @@
 import numpy as np
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense
+from tensorflow.keras.layers import Dense    
 from tensorflow.keras.optimizers import Adam, Adamax, Adadelta, Adagrad
 from tensorflow.keras.optimizers import RMSprop, SGD, Nadam
 

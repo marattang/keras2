@@ -4,13 +4,13 @@ from tensorflow.keras.layers import Dense
 from tensorflow.keras.optimizers import Adam, Adamax, Adadelta, Adagrad
 from tensorflow.keras.optimizers import RMSprop, SGD, Nadam
 
-#1. 데이터
+#1. 데이터       
 x = np.array([1,2,3,4,5,6,7,8,9,10])
 y = np.array([1,3,5,6,7,8,9,10,11,12])
 
 #2. 모델
 
-model = Sequential()
+model = Sequential()  
 model.add(Dense(1000, input_dim=1))
 model.add(Dense(100))
 model.add(Dense(100))
